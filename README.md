@@ -1,1 +1,1 @@
-# Stock Clustering and Investment Strategy Optimisation using Dynamic Time Warping Techniques
+# Stock Clustering of S&P 500 and NASDAQ 100 Constituents for Investment Strategy Optimisation
