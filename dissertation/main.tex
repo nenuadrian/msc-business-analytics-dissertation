@@ -88,17 +88,17 @@ sorting=ynt
 
 \begin{center} {\LARGE Abstract} \end{center}
 
-Recognising inherent patterns is a foundational stage in the crafting of risk-mitigating and diversified investment strategies. Conventional methods for analysing stocks, such as linear regression and principal component analysis (PCA), possess limitations in terms of their capacity to identify non-linear (non-euclidean) relationships and overlook asynchronous intricate patterns within the data that are often hard to identify without human subjective oversight. This research explores the use of clustering  as having the potential to provide strong signals for analysing stock prices in order to identify asynchronous patterns of similarities between them. We have explored  diverse methodologies for computing distances such as Euclidean, Dynamic Time Warping (DTW) and Self-Organising Maps (SOM).
+Recognising inherent patterns is a foundational stage in the crafting of risk-mitigating and diversified investment strategies. Conventional methods for analysing stocks, such as linear regression and principal component analysis (PCA), possess limitations in terms of their capacity to identify non-linear (non-euclidean) relationships and overlook asynchronous intricate patterns within the data that are often hard to identify without human subjective oversight. This research explores the use of clustering as having the potential to provide strong signals for analysing stock prices in order to identify asynchronous patterns of similarities between them. We have explored diverse methodologies for computing distances such as Euclidean, Dynamic Time Warping (DTW) and Self-Organising Maps (SOM).
 
 DTW, as a non-linear technique, facilitates the alignment of time-series even in the presence of non-uniform time axes, allowing us to discover correlations between cross-industry stocks that otherwise might not have been apparent.
 
-Self-Organising Maps are a type of unsupervised artificial neural network which would be well suited for higher dimensional data than we have explored but delivers in our results the smoothest trends.
+Self-Organising Maps are a type of unsupervised artificial neural network which would be well suited for higher dimensional data than we have explored but deliver in our results the smoothest trends.
 
 Through this research, we apply the selected algorithms on a data-set bringing together historical stock prices of top S\&P 500 and NASDAQ companies. We employ a series of methodologies for creating a similarity analysis for defining the distance between the stocks for clustering. The clusters serve the purpose of identifying and scrutinising similarly behaving stocks, thus playing a crucial role in informing a potential investment strategy formulation.
 
 To gauge the effectiveness of these methodologies we have a series of pre-established metrics consistently recorded for each algorithm: Silhouette score, Calinski-Harabasz index, Davies-Bouldin index, and visual observations. Due to the inherent complexity of non-euclidean pattern finding, we have extensively relied on visual analysis of clusters alongside empirical mathematical metrics.
 
-Backtesting and portfolio assessment algorithms have not been applied but would be the next logical step following our results to assign a monetary value to the improvements  provided by these algorithms. The results of such an assessment would depend heavily on how the algorithms are integrated in the holistic investment strategy more than their individual independent efficacy.
+Backtesting and portfolio assessment algorithms have not been applied but would be the next logical step following our results to assign a monetary value to the improvements provided by these algorithms. The results of such an assessment would depend heavily on how the algorithms are integrated in the holistic investment strategy more than their individual independent efficacy.
 
 
 \newpage
@@ -128,7 +128,7 @@ I would like to thank my supervisor, Dr Sheik Meeran, for his support of the pro
 
 The global financial system is a core and notoriously dynamic part of human society, and it is a field of interest for many who seek out strategies to inform the decision-making process for making thoughtful investments. 
 
-Understanding and predicting historical trends in financial markets also has benefits. In delving into historical data, we can identify patterns and hope to understand potential similarities in the behaviours of stocks. By looking at a large and  varied set of data across industries and over an extended time period, our aim is to provide an additional helpful metric to the traditional tool-belt of market analysts and portfolio managers. 
+Understanding and predicting historical trends in financial markets also has benefits. In delving into historical data, we can identify patterns and hope to understand potential similarities in the behaviours of stocks. By looking at a large and varied set of data across industries and over an extended time period, our aim is to provide an additional helpful metric to the traditional tool-belt of market analysts and portfolio managers. 
 
 We believe that by studying the correlation (clustering) between stocks, one can apply further analysis over all the stocks in the cluster to predict the direction of the stock of interest and add more value to portfolio optimisation processes. 
 
@@ -201,7 +201,7 @@ Python was the programming language of choice due to its simplicity, flexibility
 
 Additionally, for building up visualisations to explore the input data and understand the output clusters, we have made use of Plotly, Matplotlib and Seaborn, different Python-based libraries whose varying functionalities helped us best capture how we wanted to convey our findings.
 
-For running the algorithms considered, we have leveraged industry acknowledge implementations such as those coming from Tslearn \cite{tslearn} and Scikit-learn \cite{scikit}.
+For running the algorithms considered, we have leveraged industry-acknowledged implementations such as those coming from Tslearn \cite{tslearn} and Scikit-learn \cite{scikit}.
 
 \section{Literature Review}
 \label{sec:literature_review}
@@ -227,7 +227,7 @@ In \textit{Using Dynamic Time Warping to Find Patterns in time-series}, \cite{dt
 
 In \textit{Fast and Accurate Time-Series Clustering} \cite{fastAccurateTimeSeriesClustering}, the authors make a case for analysing data with varied Time-Series Analysis methodologies, stating that though Dynamic Time Warping has gained a reputation for being a highly accurate algorithm, it also requires more computational power than other algorithms. However, with simpler Time-Series Analysis methodologies, one can achieve almost the same if considering how to optimise a key variable: the choice of distance measure. In the case of trend-based data, this would be the \textit{shape} of the time-series. By normalising one's data-set to consider the shape of its time-series, the article goes on to prove that series analysis can successfully cross-correlate the data, resulting in accurate clustering with relatively less computational power. 
 
-In \textit{Scaling and time warping in time-series querying}, \cite{ref3}, the authors echo this sentiment claiming that Dynamic Time Warping, though highly accurate, is not scalable for large data-sets. Instead, adding uniformity scaling to a problem could significantly speed up how one arrives at search results, ensuring the same level of accuracy with less computational power. 
+In \textit{Scaling and time warping in time-series querying}, \cite{ref3}, the authors echo this sentiment claiming that Dynamic Time Warping, though highly accurate, is not straightforward to run at scale for large data-sets. Instead, adding uniformity scaling to a problem could significantly speed up how one arrives at search results, ensuring the same level of accuracy with less computational power. 
 
 Given that our data-set encompasses a variety of companies across diverse industries, we could leverage normalisation as a means of making our data more uniform and apply other Time-Series Analysis algorithms, such as Self-Organising Maps, to see if we can get accurate results with less computational power than the Dynamic Time Warping algorithm would yield.
 
@@ -289,7 +289,7 @@ Unlike Euclidean distances, DTW is a time-series analysis technique which is par
 
 What can be observed above is that we are enabled to correlate points in \textit{stock1} to multiple other points in \textit{stock2} across the selected time window, in comparison to a direct point-to-point correlation based on the exact point in time in the Euclidean world (Fig. \ref{fig:euclidean_synth}).
 
-In essence, DTW finds the optimal alignment between time-series by warping the time dimension in a way that minimises the overall distance between the series. Using DTW, we consider the temporal dynamics of stock price movements, providing a richer and  more informative characterisation of stock behaviours than what might be derived from static per-stock metrics such as average return or volatility. 
+In essence, DTW finds the optimal alignment between time-series by warping the time dimension in a way that minimises the overall distance between the series. Using DTW, we consider the temporal dynamics of stock price movements, providing a richer and more informative characterisation of stock behaviours than what might be derived from static per-stock metrics such as average return or volatility. 
 
 Our application of the algorithm involved first computing a pairwise distance matrix between all stocks based on their DTW distance. This matrix was then used as the basis for clustering, with the goal of grouping together stocks that showed similar price movement patterns over time. The clustering was performed using several different techniques, including DTW Flat Clusters from Hierarchical Clustering and the K-Means algorithm. The relative performance of these techniques was then measured and compared using a variety of evaluation metrics, including the Silhouette score, the Davies-Bouldin index, the Calinski-Harabasz index, and visual assessment.
 
@@ -379,7 +379,7 @@ For our use case, we included the CH index as an alternative to the Silhouette s
 
 \subsubsection{Davies-Bouldin Index}
 
-The Davies-Bouldin index is another metric used to evaluate the quality of clusters created by a clustering algorithm representing the average similarity between clusters. It was originally proposed  by David L. Davies and Donald W. Bouldin as a cluster separation methodology \cite{davies}. 
+The Davies-Bouldin index is another metric used to evaluate the quality of clusters created by a clustering algorithm representing the average similarity between clusters. It was originally proposed by David L. Davies and Donald W. Bouldin as a cluster separation methodology \cite{davies}. 
 
 In this algorithm, we define similarity as a measure that compares the distance between clusters along with the size of the clusters themselves. The DB index ranges in value from 0 to infinity.
 
@@ -835,7 +835,7 @@ We conclude that we should use Ward's minimum and that it will be useful to spli
 
 \subsubsection{Application in Stocks}
 
-Running on our entire data-set of 491 stocks, we have  configured a partitioning of the 23 clusters (square root of the 491 stocks) in a parallel computing environment. This took 60 minutes to compile the model and under 5 seconds to generate clusters. The extended compilation time is attributed to the necessity of computing a pairwise matrix capturing the Dynamic Time Warping (DTW) distances between every pair of stocks.
+Running on our entire data-set of 491 stocks, we have configured a partitioning of the 23 clusters (square root of the 491 stocks) in a parallel computing environment. This took 60 minutes to compile the model and under 5 seconds to generate clusters. The extended compilation time is attributed to the necessity of computing a pairwise matrix capturing the Dynamic Time Warping (DTW) distances between every pair of stocks.
 
 \begin{figure}[H]
 \centering
@@ -855,7 +855,7 @@ When contrasting this methodology with the traditional K-Means utilising Euclide
 \label{fig:kernel-cluster10}
 \end{figure}
 
-If we cherry-pick another cluster, say \textit{Cluster 5}, to deep-dive into the detected patterns, we can see similar behaviours at different points in time which mirrors the previously presented example in Fig. \ref{fig:mtch-bax} that  contained the MTCH and BAX companies. They are also included in our selected \textit{Cluster 5}, alongside AIG, AAP, XRAY, and CF.
+If we cherry-pick another cluster, say \textit{Cluster 5}, to deep-dive into the detected patterns, we can see similar behaviours at different points in time which mirrors the previously presented example in Fig. \ref{fig:mtch-bax} that contained the MTCH and BAX companies. They are also included in our selected \textit{Cluster 5}, alongside AIG, AAP, XRAY, and CF.
 
 \begin{figure}[H]
 \centering
