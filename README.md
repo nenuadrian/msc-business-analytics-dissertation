@@ -16,9 +16,9 @@ This project explores advanced clustering techniques to identify patterns and co
 
 ### Clustering Techniques
 
-•	K-Means (Euclidean and DTW): Standard and time-warped versions to group stocks based on historical performance.
-•	Hierarchical Clustering (DTW): Generate flat clusters using a distance matrix and visual dendrograms.
-•	Self-Organising Maps (MiniSom): Neural network-based clustering for high-dimensional data.
+1.	K-Means (Euclidean and DTW): Standard and time-warped versions to group stocks based on historical performance.
+2.	Hierarchical Clustering (DTW): Generate flat clusters using a distance matrix and visual dendrograms.
+3.	Self-Organising Maps (MiniSom): Neural network-based clustering for high-dimensional data.
 
 ### Data Processing
 
