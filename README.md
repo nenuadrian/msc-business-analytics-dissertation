@@ -22,8 +22,8 @@ This project explores advanced clustering techniques to identify patterns and co
 
 ### Data Processing
 
-•	Normalization: Apply MinMax scaling to ensure consistent comparison.
-•	Temporal Analysis: Focus on a selected time frame to avoid biases from external events like the COVID-19 pandemic.
+*	Normalization: Apply MinMax scaling to ensure consistent comparison.
+	Temporal Analysis: Focus on a selected time frame to avoid biases from external events like the COVID-19 pandemic.
 
 ### Evaluation Metrics
 
