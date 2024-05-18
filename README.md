@@ -8,34 +8,34 @@ This project explores advanced clustering techniques to identify patterns and co
 
 ## Objectives
 
-	1.	Analyze Historical Stock Data: Utilize clustering techniques to discover patterns in stock prices.
-	2.	Optimize Investment Strategies: Inform better decision-making by identifying similarly behaving stocks.
-	3.	Evaluate Clustering Methods: Compare Euclidean-based and DTW-based clustering approaches.
+1.	Analyze Historical Stock Data: Utilize clustering techniques to discover patterns in stock prices.
+2.	Optimize Investment Strategies: Inform better decision-making by identifying similarly behaving stocks.
+3.	Evaluate Clustering Methods: Compare Euclidean-based and DTW-based clustering approaches.
 
 ## Methodologies
 
 ### Clustering Techniques
 
-	•	K-Means (Euclidean and DTW): Standard and time-warped versions to group stocks based on historical performance.
-	•	Hierarchical Clustering (DTW): Generate flat clusters using a distance matrix and visual dendrograms.
-	•	Self-Organising Maps (MiniSom): Neural network-based clustering for high-dimensional data.
+•	K-Means (Euclidean and DTW): Standard and time-warped versions to group stocks based on historical performance.
+•	Hierarchical Clustering (DTW): Generate flat clusters using a distance matrix and visual dendrograms.
+•	Self-Organising Maps (MiniSom): Neural network-based clustering for high-dimensional data.
 
 ### Data Processing
 
-	•	Normalization: Apply MinMax scaling to ensure consistent comparison.
-	•	Temporal Analysis: Focus on a selected time frame to avoid biases from external events like the COVID-19 pandemic.
+•	Normalization: Apply MinMax scaling to ensure consistent comparison.
+•	Temporal Analysis: Focus on a selected time frame to avoid biases from external events like the COVID-19 pandemic.
 
 ### Evaluation Metrics
 
-	•	Silhouette Score: Measures how similar a stock is to its cluster compared to other clusters.
-	•	Calinski-Harabasz Index: Assesses the variance ratio within and between clusters.
-	•	Davies-Bouldin Index: Evaluates the average similarity ratio between clusters.
+•	Silhouette Score: Measures how similar a stock is to its cluster compared to other clusters.
+•	Calinski-Harabasz Index: Assesses the variance ratio within and between clusters.
+•	Davies-Bouldin Index: Evaluates the average similarity ratio between clusters.
 
 ## Results
 
-	•	Euclidean K-Means: Provides a baseline for clustering performance.
-	•	DTW-based Methods: Capture asynchronous similarities, showing improved pattern recognition.
-	•	MiniSom: Demonstrates effective clustering with high-dimensional stock data.
+•	Euclidean K-Means: Provides a baseline for clustering performance.
+•	DTW-based Methods: Capture asynchronous similarities, showing improved pattern recognition.
+•	MiniSom: Demonstrates effective clustering with high-dimensional stock data.
 
 ## Future Work
 
