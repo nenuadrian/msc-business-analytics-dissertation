@@ -21,4 +21,4 @@ jobs:
           root_file: dissertation/main.tex
 
       - name: Compile LaTeX document
-        run: latexmk -pdf -bibtex -shell-escape -interaction=nonstopmode -f dissertation/main.tex
+        run: cd dissertation && latexmk -pdf -bibtex -shell-escape -interaction=nonstopmode -f main.tex
