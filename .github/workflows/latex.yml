@@ -1,0 +1,24 @@
+name: LaTeX Build
+
+on:
+  push:
+    branches:
+      - main  # Replace with your target branch if needed
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        
+      - name: Set up LaTeX environment
+        uses: dante-ev/latex-action@v2
+        with:
+          # Target your main .tex file here
+          root_file: dissertation/main.tex
+
+      - name: Compile LaTeX document
+        run: latexmk -pdf -bibtex -shell-escape -interaction=nonstopmode -f dissertation/main.tex
