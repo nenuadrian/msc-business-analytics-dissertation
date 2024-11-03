@@ -1,6 +1,6 @@
 # Stock Clustering of S&P 500 and NASDAQ 100 Constituents for Investment Strategy Optimisation
 
-
+[![LaTeX Build](https://github.com/nenuadrian/msc-business-analytics-dissertation/actions/workflows/latex.yml/badge.svg)](https://github.com/nenuadrian/msc-business-analytics-dissertation/actions/workflows/latex.yml)
 
 ## Overview
 
