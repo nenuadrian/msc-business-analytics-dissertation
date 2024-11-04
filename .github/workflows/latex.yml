@@ -32,4 +32,4 @@ jobs:
           TEXINPUTS: "./dissertation:"  # Path to find .tex files
         run: |
           cd dissertation
-          latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -bibtex -use-biber -synctex=1 -f main.tex
+          latexmk -pdf -bibtex -shell-escape -synctex=1 -interaction=nonstopmode -f main.tex
