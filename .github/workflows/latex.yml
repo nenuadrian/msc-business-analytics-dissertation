@@ -17,8 +17,16 @@ jobs:
       - name: Set up LaTeX environment
         uses: dante-ev/latex-action@2023-A
         with:
-          # Target your main .tex file here
           root_file: dissertation/main.tex
 
-      - name: Compile LaTeX document
-        run: cd dissertation && latexmk -pdf -bibtex -shell-escape -interaction=nonstopmode -f main.tex
+      - name: Ensure .bib file exists
+        run: |
+          if [ ! -f dissertation/my.bib ]; then
+            echo "Error: dissertation/my.bib file not found!"
+            exit 1
+          fi
+
+      - name: Compile LaTeX document with BibTeX
+        run: |
+          cd dissertation
+          latexmk -pdf -bibtex -shell-escape -synctex=1 -interaction=nonstopmode -f main.tex
