@@ -27,6 +27,8 @@ jobs:
           fi
 
       - name: Compile LaTeX document with BibTeX
+        env:
+          BIBINPUTS: "./dissertation:"  # Set path to dissertation folder for .bib files
         run: |
           cd dissertation
           latexmk -pdf -bibtex -shell-escape -synctex=1 -interaction=nonstopmode -f main.tex
