@@ -55,7 +55,7 @@ This project explores advanced clustering techniques to identify patterns and co
 @article{dtwStockClustering,
 	author = {Adrian Nenu and Sheik Meeran},
 	title = {{Stock Clustering of S&P 500 and NASDAQ 100 Constituents for Investment Strategy Optimisation}},
-  url = {[https://github.com/nenuadrian/msc-business-analytics-dissertation](github.com/nenuadrian/msc-business-analytics-dissertation)},
+  url = {https://github.com/nenuadrian/msc-business-analytics-dissertation},
   year = 2023,
 }
 ```
