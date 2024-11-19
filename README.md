@@ -6,6 +6,8 @@
 
 This project explores advanced clustering techniques to identify patterns and correlations in stock prices of S&P 500 and NASDAQ 100 companies. By leveraging Dynamic Time Warping (DTW) and Self-Organising Maps (SOM), we aim to provide insights that traditional methods might overlook.
 
+![img](dissertation/img/dtw-sample.png)
+
 ## Objectives
 
 1.	Analyze Historical Stock Data: Utilize clustering techniques to discover patterns in stock prices.
