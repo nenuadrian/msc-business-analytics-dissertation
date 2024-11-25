@@ -4,13 +4,13 @@
 
 ## Overview
 
-This project dives deep into advanced clustering techniques, aiming to reveal the hidden patterns and correlations woven into the stock prices of S&P 500 and NASDAQ 100 companies. We move beyond the limitations of traditional methods by employing Dynamic Time Warping (DTW) and Self-Organising Maps (SOM) to provide investors with unique and actionable insights. 
+This project delves into advanced clustering techniques, aiming to reveal the hidden patterns and correlations woven into the stock prices of S&P 500 and NASDAQ 100 companies. We move beyond the limitations of traditional methods by employing Dynamic Time Warping (DTW) and Self-Organising Maps (SOM) to provide investors with unique and actionable insights. 
 
 ![img](dissertation/img/dtw-sample.png)
 
 ## Objectives
 
-This project pursues three core objectives.  First, it  analyzes historical stock data, employing clustering techniques to unearth hidden patterns in stock price movements. Second, it seeks to optimize investment strategies by identifying stocks with similar behaviors, leading to better-informed investment decisions. Finally, it rigorously evaluates the effectiveness of various clustering methods, comparing Euclidean-based and DTW-based approaches to determine the most suitable technique for this domain. 
+This project pursues three core objectives.  Firstly, it analyses historical stock data, employing clustering techniques to unearth hidden patterns in stock price movements. Secondly, it seeks to optimise investment strategies by identifying stocks with similar behaviours, leading to better-informed investment decisions. Finally, it rigorously evaluates the effectiveness of various clustering methods, comparing Euclidean-based and DTW-based approaches to determine the most suitable technique for this domain. 
 
 ## Methodologies
 
@@ -20,7 +20,7 @@ This research employs a triad of powerful clustering techniques: K-Means (with b
 
 ### Data Processing
 
-To ensure a fair comparison and extract meaningful insights, the stock price data undergoes normalization using MinMax scaling. The temporal analysis focuses on a specific time frame, carefully chosen to avoid biases introduced by external market shocks such as the COVID-19 pandemic.
+To ensure a fair comparison and extract meaningful insights, the stock price data undergoes normalisation using MinMax scaling. The temporal analysis focuses on a specific time frame, carefully chosen to avoid biases introduced by external market shocks such as the COVID-19 pandemic.
 
 ### Evaluation Metrics
 
@@ -36,9 +36,9 @@ This research lays the groundwork for exciting future explorations. We plan to d
 
 ## Technology Stack
 
-This project leverages the versatility of Python and JavaScript as its primary programming languages. It utilizes powerful libraries like Pandas, NumPy, Scikit-learn, Tslearn, Plotly, Matplotlib, and Seaborn for data manipulation, analysis, and visualization. The project is developed and executed on Google Cloud Platform and Google Colaboratory, taking advantage of their scalable infrastructure and collaborative environment.
+This project leverages the versatility of Python and JavaScript as its primary programming languages. It utilises powerful libraries like Pandas, NumPy, Scikit-learn, Tslearn, Plotly, Matplotlib, and Seaborn for data manipulation, analysis, and visualisation. The project is developed and executed on Google Cloud Platform and Google Colaboratory, taking advantage of their scalable infrastructure and collaborative environment.
 
-# Cite
+## Cite
 
 ```
 @article{dtwStockClustering,
